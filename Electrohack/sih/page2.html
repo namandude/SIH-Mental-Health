@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="test.css">
+
+</head>
+
+<body>
+
+    <body>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="purplelogo.jpg" alt="MindfulWellbeing.com" srcset="">
+            </div>
+            <div class="site">
+                <p>BeingMindful.com</p>
+            </div>
+
+            <ul>
+                <!-- Unordered List -->
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="/services">Services</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item"><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <form id="customForm">
+            <div class="question">
+                <p>How much do you experience intrusive thoughts or memories related to your trauma?
+                </p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+            </div>
+
+            <div class="question">
+                <p>Do you feel a sense of connection with others ?
+                </p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+            </div>
+
+            <div class="question">
+                <p>Do you feel a sense of control over your reactions during anxiety-inducing situations?
+                </p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+
+            </div>
+
+            <div class="question">
+                <p>Do you feel a sense of hope for the future?
+                </p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+
+            </div>
+
+            <div class="question">
+                <p>Have you experienced a traumatic event that continues to affect you emotionally?
+                </p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+
+            </div>
+
+
+            <div class="question">
+                <p>Are you actively avoiding reminders or situations associated with the traumatic experience?
+                </p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+
+            </div>
+
+            <div class="question">
+                <p>Have you noticed changes in your mood, such as persistent feelings of fear, anger, or sadness?
+                </p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+
+            </div>
+
+
+            <div class="question">
+                <p>Do you feel hypervigilant or constantly on guard?</p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+
+            </div>
+
+            <button type="button" onclick="calculateScore()" class="submit">Submit</button>
+            
+
+
+
+
+        </form>
+
+        <script>
+            let score2 = 0;
+
+            // Retrieving score1 from localStorage
+            var score1 = localStorage.getItem('score1');
+
+            function updateScore(value) {
+                score2 += value;
+            }
+
+            function calculateScore() {
+                console.log('Your final score for Page 2 is: ' + score2);
+
+                // Storing score2 in localStorage
+                localStorage.setItem('score2', score2);
+
+                // Redirecting to result.html or any other page
+                window.location.href = 'page3.html';
+            }
+        </script>
+
+    </body>
+
+</html>

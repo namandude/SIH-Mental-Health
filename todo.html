@@ -1,0 +1,215 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style-to-do.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="heading">
+        <img class="heading__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/laptop.svg">
+        <h1 class="heading__title">To-Do List</h1>
+      </div>
+      <form class="form">
+        <div>
+          <label class="form__label" for="todo">~ Today I need to ~</label>
+          <input class="form__input"
+               type="text"
+               id="todo"
+               name="to-do"
+               size="30"
+               required>
+          <button class="button-1"><span>Submit</span></button>
+        </div>
+      </form>
+      <div>
+        <ul class="toDoList">
+        </ul>
+      </div>
+    </section>
+    <script src="script-to-do.js"></script>
+  </body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style-to-do.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="heading">
+        <img class="heading__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/laptop.svg">
+        <h1 class="heading__title">To-Do List</h1>
+      </div>
+      <form class="form" onsubmit="addTodo(event)">
+        <div>
+          <label class="form__label" for="todo">~ Today I need to ~</label>
+          <input class="form__input"
+               type="text"
+               id="todo"
+               name="to-do"
+               size="30"
+               required>
+          <button class="button-1" type="submit"><span>Submit</span></button>
+        </div>
+      </form>
+      <div>
+        <ul class="toDoList" id="taskList">
+      
+        </ul>
+      </div>
+    </section>
+    <script src="script-to-do.js"></script>
+    <script>
+      // Load tasks from local storage on page load
+      window.onload = function () {
+        loadTasks();
+      };
+
+      function addTodo(event) {
+        event.preventDefault(); // Prevents the form from submitting and reloading the page
+        const todoInput = document.getElementById('todo');
+        const taskList = document.getElementById('taskList');
+
+        const taskText = todoInput.value;
+
+        if (taskText) {
+          // Create new task element
+          const taskItem = document.createElement('li');
+          taskItem.innerText = taskText;
+
+          // Append task to the list
+          taskList.appendChild(taskItem);
+
+          // Save tasks to local storage
+          saveTasks();
+
+          // Clear input field
+          todoInput.value = '';
+        }
+      }
+
+      function saveTasks() {
+        const taskList = document.getElementById('taskList');
+        const tasks = Array.from(taskList.children).map(task => task.innerText);
+
+        // Store tasks in local storage
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+      }
+
+      function loadTasks() {
+        const taskList = document.getElementById('taskList');
+        const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+        // Add saved tasks to the list
+        savedTasks.forEach(taskText => {
+          const taskItem = document.createElement('li');
+          taskItem.innerText = taskText;
+          taskList.appendChild(taskItem);
+        });
+      }
+    </script>
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style-to-do.css" />
+    <style>
+      /* Add or modify your hover styles */
+      .button-1:hover {
+        background-color: #2ecc71; /* Change this to your desired hover background color */
+        color: #fff; /* Change this to your desired hover text color */
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="heading">
+        <img class="heading__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/laptop.svg">
+        <h1 class="heading__title">To-Do List</h1>
+      </div>
+      <form class="form" onsubmit="addTodo(event)">
+        <div>
+          <label class="form__label" for="todo">~ Today I need to ~</label>
+          <input class="form__input"
+               type="text"
+               id="todo"
+               name="to-do"
+               size="30"
+               required>
+          <button class="button-1" type="submit"><span>Submit</span></button>
+        </div>
+      </form>
+      <div>
+        <ul class="toDoList" id="taskList">
+          <!-- Existing tasks will be dynamically added here -->
+        </ul>
+      </div>
+    </section>
+    <script src="script-to-do.js"></script>
+    <script>
+      // Load tasks from local storage on page load
+      window.onload = function () {
+        loadTasks();
+      };
+
+      function addTodo(event) {
+        event.preventDefault(); // Prevents the form from submitting and reloading the page
+        const todoInput = document.getElementById('todo');
+        const taskList = document.getElementById('taskList');
+
+        const taskText = todoInput.value;
+
+        if (taskText) {
+          // Create new task element
+          const taskItem = document.createElement('li');
+          taskItem.innerText = taskText;
+
+          // Append task to the list
+          taskList.appendChild(taskItem);
+
+          // Save tasks to local storage
+          saveTasks();
+
+          // Clear input field
+          todoInput.value = '';
+        }
+      }
+
+      function saveTasks() {
+        const taskList = document.getElementById('taskList');
+        const tasks = Array.from(taskList.children).map(task => task.innerText);
+
+        // Store tasks in local storage
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+      }
+
+      function loadTasks() {
+        const taskList = document.getElementById('taskList');
+        const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+        // Add saved tasks to the list
+        savedTasks.forEach(taskText => {
+          const taskItem = document.createElement('li');
+          taskItem.innerText = taskText;
+          taskList.appendChild(taskItem);
+        });
+      }
+    </script>
+  </body>
+</html>

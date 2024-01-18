@@ -1,0 +1,110 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 1em 0;
+}
+
+.h-ptsd{
+    margin-left: 237px;
+}
+
+.h-anxiety{
+    margin-left: 480px;
+}
+
+.h-ocd{
+    margin-left: 237px;
+}
+
+.h-bipolar{
+    margin-left: 345px;
+}
+
+.h-szp{
+    margin-left: 360px;
+}
+
+.h-dep{
+    margin-left: 360px;
+}
+
+.site p{
+    margin-top: 35px;
+}
+
+.site p a{
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    color: #fff;
+}
+
+#logo{
+    margin: 34px 45px;
+}
+
+#logo img{
+    height: 65px;
+    margin: -23px -35px;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    color: white;
+
+}
+h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+body p{
+    line-height: 20px;
+}
+input{
+    border-radius: 35px;
+    border: 1px solid black;
+}
+b{
+    font-style: italic;
+    color: #333;
+}
+span{
+    font-size: 17px;
+    color: #212020;
+    font-weight:600;
+}
+
+@media only screen and (max-width: 800px) {
+    .h-anxiety, .h-bipolar, .h-dep, .h-ocd, .h-ptsd, .h-szp{
+      margin: 0;
+      margin-top: 37px;
+    }
+  }

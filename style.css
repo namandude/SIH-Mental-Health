@@ -1,0 +1,438 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.site p a{
+    font-size: 25px;
+    font-family: 'Dancing Script', cu3rsive;
+    margin: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#logo{
+    margin: 34px 45px;
+}
+
+#logo img{
+    height: 65px;
+    margin: -23px -35px;
+     /* border: 2px solid black; */
+    /* border-radius: 50px; */
+
+}
+
+#community{
+    margin: 34px 45px;
+}
+
+#community img{
+    height: 53px;
+    margin: -23px -35px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+
+#map{
+    margin: 23px 30px;
+}
+
+#map img{
+    height: 53px;
+    margin: -23px -30px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    margin-left: 650px;
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: #004225;
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+    width: 96px;
+  }
+
+  .button {
+    display: inline-block;
+    font-size: 20.8px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px 22px;
+    background-color: rgba(52, 152, 219, 0.0);
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button:hover .links {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    font-size: 1.1rem;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    border: 2px solid #004225;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .links a {
+    display: block;
+    color: #000000;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+
+  .links a:hover {
+    background-color: #004225;
+    color: #fff;
+  }
+
+  /* Show the dropdown content when the button is clicked */
+  .show {
+    display: block;
+  }
+/* 
+.quote{
+    position: relative;
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+
+} */
+
+.quote-container {
+    position: relative;
+    width: 100vw; /* Set width to full viewport width */
+    height: 85vh; /* Set height to full viewport height */
+    overflow: hidden;
+}
+
+ #quote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video fill the width of the container */
+    height: 100%; /* Make the video fill the height of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    z-index: -1;
+    
+} 
+.quote {
+    position: relative;
+   
+    width:10%; /* Make the video fill the width of the container */
+    height: 10%; /* Make the video fill the height of the container */
+    
+    
+} 
+
+.text{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 180px;
+    margin-right: 180px;
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.text p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: black;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-1 {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    border: 1px solid #ddd;
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient( #f7ebc3, #FBF7F0);
+    height: 400px;
+    width: 500px;
+    opacity: 0.8;
+}
+
+
+.dropdown h3{
+    padding: 12px;
+  }
+
+  .dropdown ul li{
+    list-style-type: none;
+    padding: 6px;
+  }
+
+  .dropdown ul li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 3px 22px;
+    border-radius: 20px;
+  }
+
+  .dropdown ul li a:hover{
+    color: white;
+    background-color: #075332;
+  }
+
+  .dropdown ul li a:visited{
+    /* color: rgb(12, 48, 36); */
+    color: black;
+    background-color: rgb(43, 70, 52);
+}
+
+.dropdown ul li a:visited:hover{
+    color: white;
+}
+.dropdown ul li a:active{
+    background-color: rgb(78, 157, 132);
+}
+
+.treatment a{
+    font-size: 18.72px;
+    font-weight: bolder;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+
+.treatment a:hover{
+    color: white;
+    background-color: #075332;
+  }
+
+  .treatment a:visited{
+    /* color: rgb(12, 48, 36); */
+    color: black;
+    background-color: rgb(43, 70, 52);
+}
+
+.treatment a:visited:hover{
+    color: white;
+}
+.treatment a:active{
+    background-color: rgb(78, 157, 132);
+}
+.flex-item h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+.flex-item p{
+    padding: 12px;
+}
+
+.flex-item p a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+
+}
+
+.flex-item p a:hover {
+    color: white;
+    background-color: #075332;
+}
+.flex-item p a:visited{
+    /* color: rgb(12, 48, 36); */
+    color: black;
+    background-color: rgb(43, 70, 52);
+}
+
+.flex-item p a:visited:hover{
+    color: white;
+}
+.flex-item p a:active{
+    background-color: rgb(78, 157, 132);
+}
+
+#flex-item-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+#flex-item-2 .header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 7px;
+}
+
+#flex-item-2 .header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+}
+#flex-item-2 .days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+#flex-item-2 .day{
+    text-align: center;
+    padding: 5px;
+}
+
+#flex-item-2 .dates{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 2px;
+}
+#flex-item-2 .date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.2%;
+
+}
+#flex-item-2 .date:hover,
+.date.active{
+    background: #004225;
+    color: blanchedalmond;
+}
+#flex-item-2 .date.inactive{
+    color: bisque;
+}
+
+footer{
+    background: #000000;
+    color: white;
+    height: 15px;
+    padding: 7px 20px;
+    text-align: center;
+}
+
+
+
+.about{
+    background-color: rgb(240, 249, 244);
+}
+#first{
+    padding-top: 50px;
+}
+#last{
+    padding-bottom: 50px;
+}
+.d{
+    margin-bottom: 50px;
+}
+.d h1{
+    color: #07492d;
+    text-align: center;
+}
+.para{
+    margin-top: 45px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.d li{
+    margin-left: 180px;
+}
+
+
+
+
+
+
+
+
+
+

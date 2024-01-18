@@ -1,0 +1,59 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-image: url(WhatsApp\ Image\ 2023-12-19\ at\ 18.05.31_d08cf49c.jpg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 20px;;
+}
+
+header {
+    background-color: rgb(47, 49, 32);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    color: white;
+
+}
+h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color:#f7ebc3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: rgb(47, 49, 32);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+body p{
+    line-height: 20px;
+}
+input{
+    border-radius: 35px;
+    border: 1px solid black;
+}
+b{
+    font-style: italic;
+    color: #333;
+}
+span{
+    font-size: 17px;
+    color: #212020;
+    font-weight:600;
+}

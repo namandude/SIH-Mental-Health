@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Being Mindful</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">s</script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html">
+            <div id="logo">
+                <img src="beingmindful.png" alt="MindfulWellbeing.com" srcset="">
+            </div>
+        </a>
+        
+        
+
+        
+        <ul>
+            <!-- Unordered List -->
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="profile.html">Profile</a></li>
+            <div class="button-container">
+                <button onclick="toggleDropdown()" class="button">
+                  Help
+                  <div id="myDropdown" class="links">
+                    <a href="table.html" target="_blank">Health Centers Around India</a>
+                    <a href="therapy.html" target="_blank">Organisations For Your Help</a>
+                  </div>
+                </button>
+            </div>
+            <li class="item"><a href="test.html">Test</a></li>
+            <li class="item"><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <a href="https://discord.com/invite/nZAf7nzw">
+            <div id="community">
+                <img src="community.svg" alt="MindfulWellbeing.com" srcset="">
+            </div>
+        </a>
+        <a href="map.html">
+            <div id="map">
+                <img src="map.svg" alt="MindfulWellbeing.com">
+            </div>
+        </a>
+        
+    </nav>
+    <div class="quote-container">
+        
+        <video autoplay muted loop id="quote">
+            <source src="quote.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="text">
+        <p>Undersatand your mental state through assessments and get solutions on both personal and professional levels with self-help resources and reminders.</p>
+    </div>
+
+    <div class="flex-container">
+
+        <div class="flex-container-1">
+            <div class="flex-item">
+                <h1>Blogs</h1>
+                <p><a href="https://mybrainsnotbroken.com/" target="_blank" rel="noopener">My Brain's Not Broken</a></p>
+                <p><a href="https://bevoya.com/" target="_blank" rel="noopener">Beautiful Voyager</a></p>
+                <p><a href="https://anxietysisters.com/" target="_blank" rel="noopener">Anxiety Sisters</a></p>
+                <p><a href="https://douglascootey.com/" target="_blank" rel="noopener">A Splintered Mind</a></p>
+                <p><a href="https://www.wingofmadness.com/" target="_blank" rel="noopener">Wing of Madness</a></p>
+            </div>
+    
+            <div class="flex-item" id="flex-item-2">
+                <h1>Habitual Calendar</h1>
+                <div class="calender">
+                    <div class="header">
+                        <button id="prevBtn">
+                           <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <div class="monthYear" id="monthYear"></div>
+                        <button id="nextBtn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                       
+                    </div>
+                    <div class="days">
+                        <div class="day">Mon</div>
+                        <div class="day">Tues</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                        <div class="day">Sun</div>
+                    </div>
+                    <div class="dates" id="dates"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container-2">
+            <div class="flex-item">
+                <h1>Links</h1>
+                <p><a href="https://nhm.gov.in/" target="_blank" rel="noopener">www.nhm.gov.in/</a></p>
+                <p><a href="https://mhrd.gov.in/" target="_blank" rel="noopener">www.mhrd.gov.in</a></p>
+                <p><a href="https://www.mohfw.gov.in/" target="_blank" rel="noopener">www.mohfw.gov.in </a></p>
+               <p><a href="https://mib.gov.in/" target="_blank" rel="noopener">www.mib.gov.in</a></p> 
+            </div>
+    
+            <div class="flex-item">
+                <h1>Jump Onto</h1>
+                <div class="dropdown">
+                    <h3>Warning Signs and Symptoms</h3>
+                    <ul>
+                        <li> <a class="cond" href="anxiety.html">Anxiety</a></li>
+                        <li> <a class="cond" href="ocd.html">Obsessive-Compulsive Disorder</a></li>
+                        <li> <a class="cond" href="ptsd.html">Post-Traumatic Stress Disorder</a></li>
+                        <li> <a class="cond" href="depression.html">Depression</a></li>
+                        <li> <a class="cond" href="bipolar.html">Bipolar disorder</a></li>
+                        <li> <a class="cond" href="schizophrenia.html">Schizophrenia</a></li>
+                       </ul>
+                    <!-- <div class="dropdown-content">
+                       <ul>
+                        <li> <a class="cond" href="anxiety.html">Anxiety</a></li>
+                        <li> <a class="cond" href="ocd.html">Obsessive-Compulsive Disorder</a></li>
+                        <li> <a class="cond" href="ptsd.html">Post-Traumatic Stress Disorder</a></li>
+                        <li> <a class="cond" href="depression.html">Depression</a></li>
+                        <li> <a class="cond" href="BPD">Bipolar disorder</a></li>
+                       </ul>
+                    </div> -->
+                </div>
+                
+                <p class="treatment"><a href="treatment.html" target="_blank" rel="noopener">Treatments to Problems</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.beingMindful.com All rights reserved!
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="test.css">
+
+   
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="purplelogo.jpg" alt="MindfulWellbeing.com" srcset="">
+        </div>
+        <div class="site">
+            <p>BeingMindful.com</p>
+        </div>
+        
+        <ul>
+            <!-- Unordered List -->
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="/services">Services</a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <form id="customForm">
+        <div class="question">
+            <p>Do negative symptoms (lack of motivation, social withdrawal) affect your 
+                ability to engage in daily activities?</p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+        </div>
+
+        <div class="question">
+            <p>Do you feel a sense of control over your thoughts during periods of 
+                psychosis?</p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+        </div>
+
+        <div class="question">
+            <p>How would you rate the impact of positive symptoms (hallucinations, delusions) on your 
+                daily life?</p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+
+        </div>
+
+        <div class="question">
+            <p>Do you find yourself questioning the reality of your perceptions or thoughts?
+            </p>
+            A lot
+            <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+            <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+            <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+            <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+            <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+            Not at all
+        </div>
+
+        <div class="question">
+            <p>Do you feel that others misunderstand or misinterpret your behaviors? </p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+
+        </div>
+
+        <button type="button" onclick="calculateScore()" class="submit">Submit</button>
+        
+    </form>
+
+    <script>
+       let score6 = 0;
+
+// Retrieving score1 from localStorage
+
+
+function updateScore(value) {
+    score6 += value;
+}
+
+function calculateScore() {
+    console.log('Your final score for Page 6 is: ' + score6);
+
+    // Storing score2 in localStorage
+    localStorage.setItem('score6', score6);
+
+    // Redirecting to result.html or any other page
+    window.location.href = 'result.html';
+}
+
+    </script>
+    
+
+</body>
+
+</html>

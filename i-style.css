@@ -1,0 +1,85 @@
+body {
+    background-color: #fce8d5;
+    background-image: url('WhatsApp Image 2023-12-20 at 15.31.53_6033558a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* or background-size: contain; depending on your preference */
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.to-do{
+    background: linear-gradient( #f7ebc3, #FBF7F0);
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+.today{
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+.journal{
+    background: linear-gradient( #f7ebc3, #FBF7F0);
+    margin-left: 560px;
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+button:hover{
+    cursor: pointer;
+    background: linear-gradient( #f7902f, #FBF7F0);
+}
+
+button:active{
+    background: linear-gradient(#f6606d, #FBF7F0);
+    color: #fff;
+}
+
+button:clicked{
+    background: linear-gradient(#f6606d, #FBF7F0);
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    /* Apply styles only for screens with a width of 768 pixels or more */
+    .container {
+        flex-direction: row;
+    }
+
+    .to-do, .journal {
+        width: 400px;
+    }
+
+    .journal {
+        margin-left: 560px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center items in column layout */
+    }
+
+    .to-do, .journal {
+        width: 100%; /* Use full width for smaller screens */
+        margin-left: 0; /* Remove margin-left for smaller screens */
+    }
+}
