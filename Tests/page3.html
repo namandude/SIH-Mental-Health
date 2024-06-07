@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+    <link rel="stylesheet" href="style-test.css">
+  
+</head>
+
+<body>
+   
+
+        <form id="customForm">
+            <div class="question">
+                <p>Do you find yourself worrying a lot about different things?</p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+            </div>
+    
+            <div class="question">
+                <p>Do you tend to catastrophize or imagine the worst-case scenario when faced with a potential 
+                    stressor?</p>
+                    A lot
+                    <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                    <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                    <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                    <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                    <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                    Not at all
+            </div>
+    
+            <div class="question">
+                <p>How do you feel about social situations? Do they make you anxious?</p>
+                A lot
+                <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+                <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+                <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+                <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+                <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+                Not at all
+    
+            </div>
+
+            <div class="question">
+                <p>Do you often find yourself feeling overwhelmed by worry or stress?</p>
+                A lot
+            <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+            <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+            <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+            <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+            <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+            Not at all
+    
+            </div>
+
+            <div class="question">
+                <p>Have you experienced changes in your appetite, such as eating too much or too little?</p>
+                A lot
+            <button type="button" class="custom-button" id="red" onclick="updateScore(1)"></button>
+            <button type="button" class="custom-button" id="orange" onclick="updateScore(2)"></button>
+            <button type="button" class="custom-button" id="yellow" onclick="updateScore(3)"></button>
+            <button type="button" class="custom-button" id="blue" onclick="updateScore(4)"></button>
+            <button type="button" class="custom-button" id="green" onclick="updateScore(5)"></button>
+            Not at all
+    
+            </div>
+            <button type="button" onclick="calculateScore()" class="submit">Submit</button>
+            
+        </form>
+
+    <script>
+      let score3 = 0;
+
+// Retrieving score1 from localStorage
+
+
+function updateScore(value) {
+    score3 += value;
+}
+
+function calculateScore() {
+    console.log('Your final score for Page 2 is: ' + score3);
+
+    // Storing score2 in localStorage
+    localStorage.setItem('score3', score3);
+
+    // Redirecting to result.html or any other page
+    window.location.href = 'page4.html';
+}
+
+    </script>
+
+</body>
+
+</html>

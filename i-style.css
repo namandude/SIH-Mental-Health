@@ -1,6 +1,6 @@
 body {
     background-color: #fce8d5;
-    background-image: url('WhatsApp Image 2023-12-20 at 15.31.53_6033558a.jpg');
+    background-image: url('./Resources/WhatsApp Image 2023-12-20 at 15.31.53_6033558a.jpg');
     background-repeat: no-repeat;
     background-size: cover; /* or background-size: contain; depending on your preference */
 }
